@@ -68,7 +68,7 @@
     "swagger-ui": "^3.15.0",
     "traverse": "^0.6.6",
     "whatwg-fetch": "^2.0.3",
-    "snyk": "^1.189.0"
+    "snyk": "^1.192.4"
   },
   "devDependencies": {
     "autoprefixer": "6.6.1",
