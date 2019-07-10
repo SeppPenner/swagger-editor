@@ -37,7 +37,9 @@
     "serve-static": "http-server -i -a 0.0.0.0 -p 3001",
     "prestart": "npm install",
     "start": "npm-run-all --parallel serve-static open-static",
-    "watch": "webpack --config  ./webpack-dist.config.js --watch --progress"
+    "watch": "webpack --config  ./webpack-dist.config.js --watch --progress",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "dependencies": {
     "ajv": "^5.2.2",
@@ -65,7 +67,8 @@
     "swagger-client": "^3.8.4",
     "swagger-ui": "^3.15.0",
     "traverse": "^0.6.6",
-    "whatwg-fetch": "^2.0.3"
+    "whatwg-fetch": "^2.0.3",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "autoprefixer": "6.6.1",
@@ -136,5 +139,6 @@
   ],
   "optionalDependencies": {
     "webpack-dev-server": "1.14.0"
-  }
+  },
+  "snyk": true
 }
